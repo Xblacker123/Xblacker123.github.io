@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贱贱天团 - 主界面</title>
+    <link rel="stylesheet" href="css/style0328.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-chart-line"></i>
+                <h1>贱贱天团</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index0328.html">脸面</a></li>
+                    <li><a href="#" class="active">所谓的公告管理</a></li>
+                    <li><a href="department0328.html">四个人也能有部门？</a></li>
+                    <li><a href="login0328.html">滚去登录</a></li>
+                    <li><a href="password-log0328.html">谁允许你改密码呢</a></li>
+                </ul>
+            </nav>
+            <div class="user-info">
+                <img src="images/jjtt.jpg" alt="用户头像">
+                <span>很贱但又不完全贱的团员</span>
+                <button class="btn btn-danger" onclick="location.href='login.html'">滚走</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="section">
+                <div class="section-header">
+                    <h2>请开始叭叭</h2>
+                </div>
+                <div class="form-container">
+                    <form id="announcement-form">
+                        <div class="form-group">
+                            <label for="announcement-title">公告标题</label>
+                            <input type="text" id="announcement-title" class="form-control" placeholder="请输入公告标题">
+                            <div class="error-message" id="announcement-title-error">请输入公告标题</div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="announcement-type">公告类型</label>
+                                <select id="announcement-type" class="form-control">
+                                    <option value="">-- 请选择公告类型 --</option>
+                                    <option value="notice">打羽毛球</option>
+                                    <option value="news">三角洲</option>
+                                    <option value="reminder">金铲铲</option>
+                                    <option value="policy">只要是游戏都行</option>
+                                </select>
+                                <div class="error-message" id="announcement-type-error">请选择公告类型</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="announcement-department">发布部门</label>
+                                <select id="announcement-department" class="form-control">
+                                    <option value="">-- 请选择部门 --</option>
+                                    <option value="hr">钢泡泡</option>
+                                    <option value="it">甜瓜瓜</option>
+                                    <option value="finance">咸蛋蛋</option>
+                                    <option value="marketing">鲤鲤鱼</option>
+                                    <option value="sales">全团圣旨</option>
+                                </select>
+                                <div class="error-message" id="announcement-department-error">请选择发布部门</div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="announcement-content">公告内容</label>
+                            <textarea id="announcement-content" class="form-control" placeholder="请输入公告内容..."></textarea>
+                            <div class="error-message" id="announcement-content-error">请输入公告内容</div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="announcement-start">生效时间</label>
+                                <input type="date" id="announcement-start" class="form-control">
+                                <div class="error-message" id="announcement-start-error">请选择生效时间</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="announcement-end">过期时间</label>
+                                <input type="date" id="announcement-end" class="form-control">
+                                <div class="error-message" id="announcement-end-error">请选择过期时间</div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="announcement-attachment">附件</label>
+                            <input type="file" id="announcement-attachment" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input type="checkbox" id="announcement-urgent">
+                                <label for="announcement-urgent">紧急通知</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group" style="text-align: center; margin-top: 30px;">
+                            <button type="submit" class="btn btn-primary" style="padding: 12px 40px;">
+                                <i class="fas fa-paper-plane"></i> 发布公告（不给你取消的选项）
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>© 2025 贱贱天团 | 版权所有 侵权咬人</p>
+            <div class="footer-links">
+                <a href="https://v.douyin.com/9XZRNfbukC8/">关于我们（这里能点开）</a>
+                <a href="https://baike.baidu.com/item/%E8%A5%BF%E5%B9%B3%E5%8E%BF%E9%AB%98%E7%BA%A7%E4%B8%AD%E5%AD%A6/10406951?fromtitle=%E6%B2%B3%E5%8D%97%E7%9C%81%E8%A5%BF%E5%B9%B3%E5%8E%BF%E9%AB%98%E7%BA%A7%E4%B8%AD%E5%AD%A6&fromid=471073">联系我们（这里也能）</a>
+                <a href="https://v.douyin.com/e19lYPoRG_g/">隐私政策（这里可能也能点开）</a>
+                <a href="https://www.dongchedi.com/article/7288255493481431588">使用条款（这里你猜能不能）</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main0328.js"></script>
+    <script src="js/announcement0328.js"></script>
+</body>
+</html>

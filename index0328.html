@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贱贱天团 - 主界面</title>
+    <link rel="stylesheet" href="css/style0328.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-chart-line"></i>
+                <h1>贱贱天团</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">脸面</a></li>
+                    <li><a href="announcement0328.html">所谓的公告管理</a></li>
+                    <li><a href="department0328.html">四个人也能有部门？</a></li>
+                    <li><a href="login0328.html">滚去登录</a></li>
+                    <li><a href="password-log0328.html">谁允许你改密码呢</a></li>
+                </ul>
+            </nav>
+            <div class="user-info">
+                <img src="images/jjtt.jpg" alt="用户头像">
+                <span>很贱但又不完全贱的团员</span>
+                <button class="btn btn-danger" onclick="location.href='login.html'">滚走</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="dashboard">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>系统用户</h2>
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="card-content">0</div>
+                    <div class="card-footer">
+                        <i class="fas fa-arrow-up"></i> 咋可能有用户
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h2>部门数量</h2>
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="card-content">4</div>
+                    <div class="card-footer">
+                        <i class="fas fa-arrow-up"></i> 四个人四个部门，多好
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h2>今日公告</h2>
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div class="card-content">4</div>
+                    <div class="card-footer">
+                        <i class="fas fa-arrow-down"></i> 朕大发慈悲写下面了，猜猜原文在哪
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h2>待处理事项</h2>
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="card-content">4</div>
+                    <div class="card-footer">
+                        <i class="fas fa-exclamation-circle"></i> 需要尽快处理（下面都是）
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <h2>最新公告</h2>
+                    <button class="btn btn-primary" onclick="location.href='announcement.html'">
+                        <i class="fas fa-plus"></i> 发布新公告
+                    </button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>标题</th>
+                            <th>发布部门</th>
+                            <th>发布时间</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>小鲤鱼的肺腑之言</td>
+                            <td>尊贵的钢泡泡大人</td>
+                            <td>2024-11-3 23:11</td>
+                            <td><span class="status status-active">已发布</span></td>
+                            <td class="actions">
+                                <button class="action-btn action-edit"><i class="fas fa-edit"></i></button>
+                                <button class="action-btn action-delete"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>咸蛋蛋发神经</td>
+                            <td>就经常发神经那个人机</td>
+                            <td>2024-12-11 19:20</td>
+                            <td><span class="status status-active">已发布</span></td>
+                            <td class="actions">
+                                <button class="action-btn action-edit"><i class="fas fa-edit"></i></button>
+                                <button class="action-btn action-delete"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>某人卑微发言</td>
+                            <td>经常被冷落终于看淡的愤青</td>
+                            <td>2025-05-30 22:31</td>
+                            <td><span class="status status-inactive">已过期（都怪你们）</span></td>
+                            <td class="actions">
+                                <button class="action-btn action-edit"><i class="fas fa-edit"></i></button>
+                                <button class="action-btn action-delete"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>记性不好搞的人才需要</td>
+                            <td>最尊贵那个</td>
+                            <td>2025-06-05 11:53</td>
+                            <td><span class="status status-active">已发布</span></td>
+                            <td class="actions">
+                                <button class="action-btn action-edit"><i class="fas fa-edit"></i></button>
+                                <button class="action-btn action-delete"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <div class="page-item"><a href="#" class="page-link active">1</a></div>
+                    <div class="page-item"><a href="#" class="page-link">2</a></div>
+                    <div class="page-item"><a href="#" class="page-link">3</a></div>
+                    <div class="page-item"><a href="#" class="page-link">下一页</a></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>© 2025 贱贱天团 | 版权所有 侵权咬人</p>
+            <div class="footer-links">
+                <a href="https://v.douyin.com/9XZRNfbukC8/">关于我们（这里能点开）</a>
+                <a href="https://baike.baidu.com/item/%E8%A5%BF%E5%B9%B3%E5%8E%BF%E9%AB%98%E7%BA%A7%E4%B8%AD%E5%AD%A6/10406951?fromtitle=%E6%B2%B3%E5%8D%97%E7%9C%81%E8%A5%BF%E5%B9%B3%E5%8E%BF%E9%AB%98%E7%BA%A7%E4%B8%AD%E5%AD%A6&fromid=471073">联系我们（这里也能）</a>
+                <a href="https://v.douyin.com/e19lYPoRG_g/">隐私政策（这里可能也能点开）</a>
+                <a href="https://www.dongchedi.com/article/7288255493481431588">使用条款（这里你猜能不能）</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main0328.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贱贱天团 - 登录</title>
+    <link rel="stylesheet" href="css/style0328.css">
+    <link rel="stylesheet" href="css/auth0328.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h2>世界灿烂盛大，欢迎回家</h2>
+                <p>请登录您的账户</p>
+            </div>
+            <div class="auth-body">
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-username">用户名</label>
+                        <input type="text" id="login-username" class="form-control" placeholder="请输入用户名">
+                        <div class="error-message" id="login-username-error">请输入用户名</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">密码</label>
+                        <input type="password" id="login-password" class="form-control" placeholder="请输入密码">
+                        <div class="error-message" id="login-password-error">请输入密码</div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="form-group" style="flex: 1;">
+                                <label for="captcha">验证码</label>
+                                <input type="text" id="captcha" class="form-control" placeholder="请输入验证码">
+                                <div class="error-message" id="captcha-error">请输入验证码</div>
+                            </div>
+                            <div class="form-group" style="margin-top: 25px;">
+                                <div style="background: #eee; padding: 10px; border-radius: 4px; font-weight: bold; letter-spacing: 2px; text-align: center;">A3F7</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-sign-in-alt"></i> 登录
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="auth-footer">
+                还没有账户？自觉一点，滚去注册 <a href="register0328.html">立即注册</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main0328.js"></script>
+    <script src="js/auth0328.js"></script>
+</body>
+</html>
